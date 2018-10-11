@@ -56,7 +56,7 @@ def effective_IP(ip_title):
             urllib.request.install_opener(opener)
             res=urllib.request.urlopen(url).read()
             print(ip_title[i]+':'+ip_title[i+1],'is OK')
-            proxy_ip.write('%s\n'%str(ip_title[i+2]+':'+'\''+ip_title[i]+':'+ip_title[i+1]+'\''))#写入IP
+            proxy_ip.write('%s\n'%str('\''+ip_title[i+2]+'\''+':'+'\''+ip_title[i]+':'+ip_title[i+1]+'\''))#写入IP
         print('总共爬取了'+str(len(ip_title)/5)+'个有效IP')
     except Exception as e:
         print(i,e)
