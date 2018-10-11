@@ -4,9 +4,6 @@ import requests
 import re
 import time
 import random
-import threading
-import socket
-import ast
 
 proxys = []
 
